@@ -5,13 +5,7 @@ export const entitiesLabels: string[] = [
   'Users',
 ]
 
-export const structuralEntitiesLabels: string[] = [
-  'Cards',
-  'Features',
-  'Links',
-  'Questions',
-  'Technologies',
-]
+export const structuralEntitiesLabels: string[] = ['Questions', 'Technologies']
 
 export const allEntitiesLabels: string[] = [
   'Activities',
