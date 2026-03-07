@@ -1,35 +1,35 @@
 import { expect, it } from 'vitest'
 
-import * as atomic from 'atomic'
+import * as nucleify from 'nucleify'
 
 it('returns AdTextarea for "textarea"', (): void => {
-  expect(atomic.getComponent('textarea')).toBe(atomic.AdTextarea)
+  expect(nucleify.getComponent('textarea')).toBe(nucleify.AdTextarea)
 })
 
 it('returns AdInputText for "input-text"', (): void => {
-  expect(atomic.getComponent('input-text')).toBe(atomic.AdInputText)
+  expect(nucleify.getComponent('input-text')).toBe(nucleify.AdInputText)
 })
 
 it('returns AdDatePicker for "date-picker"', (): void => {
-  expect(atomic.getComponent('date-picker')).toBe(atomic.AdDatePicker)
+  expect(nucleify.getComponent('date-picker')).toBe(nucleify.AdDatePicker)
 })
 
 it('returns AdSelect for "select"', (): void => {
-  expect(atomic.getComponent('select')).toBe(atomic.AdSelect)
+  expect(nucleify.getComponent('select')).toBe(nucleify.AdSelect)
 })
 
 it('returns AdPassword for "password"', (): void => {
-  expect(atomic.getComponent('password')).toBe(atomic.AdPassword)
+  expect(nucleify.getComponent('password')).toBe(nucleify.AdPassword)
 })
 
 it('returns AdInputText for unknown types', (): void => {
   expect(
-    atomic.getComponent('unknown-type' as unknown as atomic.ComponentType)
-  ).toBe(atomic.AdInputText)
+    nucleify.getComponent('unknown-type' as unknown as nucleify.ComponentType)
+  ).toBe(nucleify.AdInputText)
 })
 
 it('returns AdInputText for empty string', (): void => {
-  expect(atomic.getComponent('' as unknown as atomic.ComponentType)).toBe(
-    atomic.AdInputText
+  expect(nucleify.getComponent('' as unknown as nucleify.ComponentType)).toBe(
+    nucleify.AdInputText
   )
 })

@@ -1,4 +1,4 @@
-import type { ComponentType } from 'atomic'
+import type { ComponentType } from 'nucleify'
 import {
   AdDatePicker,
   AdInputMask,
@@ -6,7 +6,7 @@ import {
   AdPassword,
   AdSelect,
   AdTextarea,
-} from 'atomic'
+} from 'nucleify'
 
 export function getComponent(type: ComponentType) {
   const componentMap = {
