@@ -19,7 +19,7 @@ export function getTitle(selectedObject: ObjectType): string {
       if (property === 'first_name' && 'last_name' in selectedObject) {
         return `${selectedObject.first_name} ${selectedObject.last_name}`
       }
-      return selectedObject[property as keyof ObjectType]
+      return String(selectedObject[property as keyof ObjectType])
     }
   }
 
